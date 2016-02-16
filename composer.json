@@ -4,7 +4,7 @@
     "homepage": "https://github.com/shane-lessard/php-paypal-ipn",
     "keywords": ["paypal", "ipn", "php"],
     "license": "GPL-2.0+",
-    "version": "2.5.2",
+    "version": "2.6.0",
     "authors": [
         {
           "name": "Shane Lessard",
