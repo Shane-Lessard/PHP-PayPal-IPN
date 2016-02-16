@@ -1,7 +1,7 @@
 {
     "name": "Shane-Lessard/php-paypal-ipn",
     "description": "Forked, Fixed, and Updated on 2-3-2015. A class to listen for and handle Instant Payment Notifications (IPN) from the PayPal server.",
-    "homepage": "https://github.com/Shane-Lessard/PHP-PayPal-IPN",
+    "homepage": "https://github.com/shane-lessard/php-paypal-ipn",
     "keywords": ["paypal", "ipn", "php"],
     "license": "GPL-2.0+",
     "version": "2.5.2",
