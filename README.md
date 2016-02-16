@@ -1,7 +1,7 @@
 PHP-PayPal-IPN
 ==============
 
-**WARNING:** Version 2.5.1+ has a different namespace! It is now `wadeshuler\paypalipn`!
+Forked from: https://github.com/WadeShuler/PHP-PayPal-IPN
 
 Forked from: https://github.com/Quixotix/PHP-PayPal-IPN/
 
@@ -12,16 +12,6 @@ This fork fixes the known issues with the original repo, as well as updates the 
 **NOTICE: The SSLv3 issue is fixed!**
 
 **This has been fixed and works out of the box, the old `Quixotix` repo no longer works!**
-
-**PLEASE NOTE: I am still in the works of cleaning this package up. These docs still have remnants of the original repo, so please bare with me.** I am not trying to remove his name, and I give Quixotix full credit for his original work. His repo just hasn't been updated since 2012, and it's now 2015 and it isn't maintained anymore. If there is anything I need to do, or reword, to ensure he is appropriately credited just let me know.
-
-@TODO Recode to follow best practices (camelCase, etc).
-
-@TODO Finish updating Readme and Documentation.
-
-@TODO Add security to verify payment status is completed and owner's PayPal email address.
-
-@TODO Update examples
 
 **Requires:** PHP >= 5.3
 
@@ -52,8 +42,9 @@ composer.json
     $listener->use_sandbox = true;
     $listener->use_curl = true;
     $listener->follow_location = false;
-    $listener->timeout = 30;
+    $listener->timeout = 30; 
     $listener->verify_ssl = true;
+    $listener->use_tls = false; //Curl specify using SSL 6 (TLS 1.2)
 
     if ($verified = $listener->processIpn())
     {
