@@ -1,6 +1,6 @@
 <?php
 
-namespace wadeshuler\paypalipn;
+namespace shanelessard\paypalipn;
 
 use Exception;
 
