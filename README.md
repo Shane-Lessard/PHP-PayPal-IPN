@@ -24,7 +24,7 @@ Install with Composer
 
 Composer is now supported!
 
-Packagist: https://packagist.org/packages/wadeshuler/php-paypal-ipn
+Packagist: https://packagist.org/packages/shane-lessard/php-paypal-ipn
 
 composer.json
 
