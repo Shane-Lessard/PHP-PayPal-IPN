@@ -44,7 +44,7 @@ composer.json
     $listener->follow_location = false;
     $listener->timeout = 30; 
     $listener->verify_ssl = true;
-    $listener->use_tls = false; //Curl specify using SSL 6 (TLS 1.2)
+    $listener->curl_ssl = false_; //Curl specify using SSL 6 (TLS 1.2)
 
     if ($verified = $listener->processIpn())
     {

@@ -65,11 +65,11 @@ class IpnListener
     public $verify_ssl = true;
 
     /**
-     * If true, declase curl SSL version 6 (tls 1.2)
+     * If !false, specify curl SSL version(tls 1.2)
      * 
      * @var bool
      */
-    public $use_tls = false;
+    public $curl_ssl = false;
 
     private $_errors = array();
     private $post_data;
@@ -106,8 +106,8 @@ class IpnListener
             curl_setopt($ch, CURLOPT_CAINFO, dirname(dirname(__FILE__)) . '/cert/api_cert_chain.crt');
         }
 
-        if ($this->use_tls){
-            curl_setopt($ch, CURLOPT_SSLVERSION, 6);
+        if ($this->curl_ssl !== false){
+            curl_setopt($ch, CURLOPT_SSLVERSION, $this->curl_ssl);
         }
 
         curl_setopt($ch, CURLOPT_URL, $uri);
